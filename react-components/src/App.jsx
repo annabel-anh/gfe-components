@@ -1,5 +1,4 @@
 import "./App.css";
-import Badge from "./components/badge/Badge";
 
 function App() {
   return (
