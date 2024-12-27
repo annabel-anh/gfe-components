@@ -1,6 +1,0 @@
-#root {
-  max-width: var(--desktop-container-max-width);
-  margin: 0 auto;
-  padding: var(--desktop-side-padding);
-  text-align: center;
-}
