@@ -3,6 +3,7 @@ import "./App.css";
 import BadgesPage from "./components/badge/BadgesPage/BadgesPage.jsx";
 import ComponentPageLayout from "./layouts/ComponentPageLayout.jsx";
 import HomePage from "./pages/HomePage/HomePage.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="components" element={<ComponentPageLayout />}>
         <Route path="badge" element={<BadgesPage />} />
       </Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
