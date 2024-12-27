@@ -1,10 +1,12 @@
+import { Routes, Route } from "react-router";
 import "./App.css";
+import BadgesPage from "./pages/BadgesPage/BadgesPage.jsx";
 
 function App() {
   return (
-    <>
-      <h1>Components</h1>
-    </>
+    <Routes>
+      <Route path="/badge" element={<BadgesPage />} />
+    </Routes>
   );
 }
 
