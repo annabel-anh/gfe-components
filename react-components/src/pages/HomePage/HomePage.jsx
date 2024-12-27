@@ -7,7 +7,7 @@ function HomePage() {
       <h1>Components</h1>
       {links.map((link) => {
         return (
-          <Link to={`components/${link.to}`} key={link.to}>
+          <Link to={`${link.to}`} key={link.to}>
             {link.label}
           </Link>
         );
