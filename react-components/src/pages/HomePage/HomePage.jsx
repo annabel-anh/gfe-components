@@ -1,7 +1,11 @@
 import { Link } from "react-router";
 
 function HomePage() {
-  const links = [{ to: "badge", label: "Badge" }];
+  const links = [
+    { to: "badge", label: "Badge" },
+    { to: "blog-card", label: "Blog Card" },
+  ];
+
   return (
     <>
       <h1>Components</h1>
