@@ -25,28 +25,28 @@
   --fw-semibold: 600;
 
   /* Font sizes */
-  --fs-xs: 0.75rem;
-  --fs-sm: 0.875rem;
-  --fs-base: 1rem;
-  --fs-lg: 1.125rem;
-  --fs-xl: 1.25rem;
-  --fs-2xl: 1.5rem;
-  --fs-3xl: 1.875rem;
-  --fs-4xl: 2.25rem;
-  --fs-5xl: 3rem;
-  --fs-6xl: 3.75rem;
+  --fs-xs: calc(12rem / 16);
+  --fs-sm: calc(14rem / 16);
+  --fs-base: calc(16rem / 16);
+  --fs-lg: calc(18rem / 16);
+  --fs-xl: calc(20rem / 16);
+  --fs-2xl: calc(24rem / 16);
+  --fs-3xl: calc(30rem / 16);
+  --fs-4xl: calc(36rem / 16);
+  --fs-5xl: calc(48rem / 16);
+  --fs-6xl: calc(60rem / 16);
 
   /* Line heights */
-  --line-height-xs: 1rem;
-  --line-height-sm: 1.25rem;
-  --line-height-base: 1.5rem;
-  --line-height-lg: 1.75rem;
-  --line-height-xl: 1.75rem;
-  --line-height-2xl: 2rem;
-  --line-height-3xl: 2.25rem;
-  --line-height-4xl: 2.5rem;
-  --line-height-5xl: 3rem;
-  --line-height-6xl: 3.75rem;
+  --line-height-xs: calc(16rem / 16);
+  --line-height-sm: calc(20rem / 16);
+  --line-height-base: calc(24rem / 16);
+  --line-height-lg: calc(28rem / 16);
+  --line-height-xl: calc(28rem / 16);
+  --line-height-2xl: calc(32rem / 16);
+  --line-height-3xl: calc(36rem / 16);
+  --line-height-4xl: calc(40rem / 16);
+  --line-height-5xl: calc(48rem / 16);
+  --line-height-6xl: calc(60rem / 16);
 
   /* Colors */
   /* Text colors */
@@ -127,6 +127,18 @@ body {
   box-sizing: border-box;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
 img,
 picture {
   display: block;
@@ -154,6 +166,11 @@ select {
   }
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Credits */
 
 .credits {
@@ -168,4 +185,9 @@ select {
 .credits a {
   color: #000;
   font-weight: bold;
+}
+
+#root {
+  height: 100vh;
+  max-width: 100%;
 }
