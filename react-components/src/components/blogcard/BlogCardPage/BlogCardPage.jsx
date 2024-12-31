@@ -1,5 +1,6 @@
 import BlogCard from "../BlogCard";
 import coverImage from "../../../assets/spacejoy-YqFz7UMm8qE-unsplash.jpg";
+import "./BlogCardPage.css";
 
 function BlogCardPage() {
   const blogCard = {
@@ -10,7 +11,7 @@ function BlogCardPage() {
     badges: ["Interior"],
     title: "Top 5 Living Room Inspirations",
     desc: "Curated vibrant colors for your living, make it pop & calm in the same time.",
-    link: "example.com",
+    link: "blog-card",
   };
 
   const { image, badges, title, desc, link } = blogCard;
