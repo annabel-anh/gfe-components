@@ -187,7 +187,14 @@ a {
   font-weight: bold;
 }
 
-#root {
-  height: 100vh;
-  max-width: 100%;
+@media screen and (min-width: 768px) {
+  #root {
+    min-height: max(100vh, 1024px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #root {
+    min-height: max(100vh, 768px);
+  }
 }

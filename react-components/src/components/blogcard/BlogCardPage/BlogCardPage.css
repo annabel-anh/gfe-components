@@ -1,16 +1,16 @@
 .blog-card-page_container {
   background-image: linear-gradient(52deg, #f9fafb, #d2d6db);
-  min-height: 812px;
   padding: 120px var(--mobile-side-padding);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 @media screen and (min-width: 768px) {
   .blog-card-page_container {
     padding-left: var(--tablet-side-padding);
     padding-right: var(--tablet-side-padding);
-    min-height: max(100vh, 1024px);
   }
 }
 
@@ -18,6 +18,5 @@
   .blog-card-page_container {
     padding-left: var(--desktop-side-padding);
     padding-right: var(--desktop-side-padding);
-    min-height: max(100vh, 768px);
   }
 }
